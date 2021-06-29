@@ -1,0 +1,123 @@
+/* ?start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* @font-face {
+  font-family: Perpetua Titling MT;
+  src: url(fonts/PERTILI.TTF);
+} */
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* *small screen */
+@media (min-width: 776px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* *medium screen */
+@media (min-width: 970px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* *large screen  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* ?start global rules */
+
+/* ?start first section */
+
+.showSlider .firstSection {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.showSlider .firstSection::-webkit-scrollbar {
+  display: none;
+}
+
+.showSlider .firstSection .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.showSlider .firstSection .container::-webkit-scrollbar {
+  display: none;
+}
+
+.showSlider .firstSection .container h3 {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: fit-content;
+  font-size: 133px;
+  font-family: Perpetua Titling MT;
+  font-weight: 100;
+  z-index: 100;
+}
+
+.showSlider .firstSection .container .middelBar {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+}
+
+.showSlider .firstSection .container .middelBar .middelImage:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.showSlider .firstSection .container .leftBar,
+.showSlider .firstSection .container .rightBar {
+  width: 12.5%;
+}
+
+.showSlider .firstSection .container .leftBar .sideImage:not(:last-child),
+.showSlider .firstSection .container .rightBar .sideImage:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.showSlider .firstSection .container img {
+  width: 100%;
+}
+
+.showSlider .firstSection .container .leftBar {
+  position: absolute;
+  left: 73%;
+  transform: translateX(-50%);
+  top: -80%;
+}
+
+.showSlider .firstSection .container .rightBar {
+  position: absolute;
+  left: 27%;
+  transform: translateX(-50%);
+  top: 47%;
+}
+
+/* ?end first section */
